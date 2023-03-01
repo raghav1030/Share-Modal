@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share your Profile</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+</head>
+<body class="font-trebuchet bg-black">
+    
+    <!-- Wrapper -->
+
+    <div id="wrapper" class=" w-[100vw] h-[100vh]  ">
+        <div  class="w-[100%] h-[100%] ">
+
+            <!-- Upper Circle -->
+            <div id="circle1" class="absolute h-[13em] w-[13em] left-[30%] top-[5%] rounded-[50%] shadow-[0_0_50px_#d84869] -z-10 " style="background: linear-gradient(-25deg , #d84869 , #f46641);"></div>
+
+            <!-- Card -->
+            <div  id="card" class="absolute  left-[34%] top-[17%]  h-[450px] gap-[15px]  border-[#ffffff30] border-[2px] bg-[#ffffff10] backdrop-blur-[15px] rounded-[15px] text-white p-[20px_50px] flex flex-col  items-center justify-evenly z-10 " >
+                <div  >
+                    <img class="border-[2px_solid_#ffffff30] w-[150px] h-[150px] rounded-[50%]   " src="./Resources/Photo-Raghav.jpg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="text-center text-[2rem]    ">Raghav Gandhi</h2>
+                </div>
+
+                <h3 class="text-[#ffffff85] text-center ">
+                    Full Stack Web Developer
+                </h3>
+
+                <!-- Button Group -->
+
+                <div class="flex justify-between gap-[10px] items-center " >
+                    <!-- Share button -->
+                    <button onclick="openModal()" class="btn-hover transition-all duration-500 ease-in-out flex justify-center items-center gap-[7px] p-[9px_12px]  border-[#ffffffb9] border-[2px]  capitalize rounded-[4px] text-[#ffffffb9] cursor-pointer   " >Share my Profile <i class="fi fi-rr-share"></i> </button>
+
+                    <!-- Follow Me -->
+                    <button onclick="openModal()" class="transition-all duration-500 ease-in-out btn-hover capitalize w-[150px] p-[9px_12px]  border-[#ffffffb9] border-[2px] rounded-[4px] text-[#ffffffb9] cursor-pointer   " >Follow Me</button>
+                </div>
+
+            </div>
+
+            <!-- Lower Circle -->
+            <div id="circle2" class="absolute bottom-[5%] right-[30%] w-[19em] h-[19em] shadow-[0_0_50px_#5648d8] rounded-[50%] -z-10  " style="background: linear-gradient(-25deg , #5648d8 , #8641f4); " ></div>
+        </div>
+<!-- 
+        Modal Component
+        <div class="modal ">
+            Header
+            <div class="flex space-x-44 justify-between pt-[0.5rem]  pb-[8px] border-b-[1px] border-b-[#ffffff88] mb-[30px]    ">
+
+                <h1 class="text-[2rem] ">Share My Profile </h1>
+
+                Cross Sign
+                <div><i class="fa-solid fa-xmark close text-[30px] pt-[0.5rem] "></i></div>
+
+            </div>
+
+            
+
+            Share via
+            <h3 class=" ">Share this via</h3>
+
+ 
+            Links
+        <div class="flex justify-between items-center flex-wrap mt-[20px] ">
+            <div>
+                <a class="icon" id="instagram" href="https://www.instagram.com/raghav_gandhi10/"><i  class="fa-brands fa-instagram text-[27px]  "></i></a>
+            </div>
+
+            <div>
+                <a class="icon" id="twitter"  href="https://twitter.com/RaghavGandhi14"><i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+
+            <div>
+                <a class="icon"  id="linkedin" href="https://www.linkedin.com/in/raghav-gandhi-766b4917b/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <div>
+                <a class="icon"  id="github" href="https://github.com/raghav1030"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div> -->
+
+      <!-- Modal Component -->
+  <div class="modal">
+    <div class="modal-header text-2xl">
+      <h1>Share My Profile</h1>
+      <div>
+        <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+      </div>
+    </div>
+
+
+    <div>
+
+      <h3 class="text-xl  " >Share this via</h3>
+
+      
+      <div class="icon-container">
+        <a href="https://www.facebook.com/raghav.gandhi.731" class="icon" id="facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/RaghavGandhi14" class="icon" id="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/raghav_gandhi10/" class="icon" id="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://github.com/raghav1030" class="icon" id="github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/raghav-gandhi-766b4917b/" class="icon" id="linkedin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Overlay -->
+  
+    <div class="overlay" onclick="closeModal()"></div>
+</div> 
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
